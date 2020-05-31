@@ -11,7 +11,3 @@ nomad_server_ssh_keys = [
 nomad_client_ssh_keys = [
   "hetzner_ssh_key"
 ]
-
-remote_docker_ssh_keys = [
-  "hetzner_ssh_key"
-]
