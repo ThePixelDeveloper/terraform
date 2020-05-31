@@ -25,6 +25,8 @@ survive with a server going down.
 
 ## Setup
 
+Firstly, register for [Terraform Cloud](https://app.terraform.io/signup/account) and [Hetzner Cloud](https://www.hetzner.com/cloud).
+
 1. Rename `backend.hcl.example` to `backend.hcl` and fill in with your Terraform Cloud values.
 2. Rename `terraform.tfvars.example` to `terraform.tfvars` and fill in with your Hetzner Cloud values.
 3. Run `terraform init -backend-config=backend.hcl`
