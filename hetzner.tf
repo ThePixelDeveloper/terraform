@@ -229,10 +229,10 @@ resource "hcloud_floating_ip" "nomad-client" {
 }
 
 resource "hcloud_volume" "portworx" {
-  count     = length(hcloud_server.nomad-client)
-  name      = "portworx-${count.index+1}"
-  location  = "nbg1"
-  size      = 10
+  count      = length(hcloud_server.nomad-client)
+  name       = "portworx-${count.index + 1}"
+  location   = "nbg1"
+  size       = 10
   depends_on = [hcloud_server.nomad-client]
 }
 
@@ -279,7 +279,7 @@ locals {
 
 resource "local_file" "ansible_inventory" {
   filename = "${path.module}/build/ansible/inventory/hetzner"
-  content = local.ansible_inventory
+  content  = local.ansible_inventory
 }
 
 output "ansible_inventory" {
