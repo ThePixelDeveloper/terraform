@@ -22,6 +22,15 @@ Cloud, a time consuming process.
 We default to having three servers in the cluster, meaning the platform can
 survive with a server going down.
 
+
+## Setup
+
+1. Rename `backend.hcl.example` to `backend.hcl` and fill in with your Terraform Cloud values.
+2. Rename `terraform.tfvars.example` to `terraform.tfvars` and fill in with your Hetzner Cloud values.
+3. Run `terraform init -backend-config=backend.hcl`
+4. Run `terraform plan` to see what's going to happen.
+5. Run `terraform apply` to apply changes.
+
 ## Variables
 
 ### General
