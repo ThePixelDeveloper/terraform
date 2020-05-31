@@ -1,0 +1,22 @@
+[consul_server]
+%{ for server in consul_servers ~}
+${server.public} ipv4_address_private=${server.private}
+%{ endfor ~}
+
+[nomad_server]
+%{ for server in nomad_servers ~}
+${server.public} ipv4_address_private=${server.private}
+%{ endfor ~}
+
+[consul_client]
+%{ for server in nomad_servers ~}
+${server.public} ipv4_address_private=${server.private}
+%{ endfor ~}
+%{ for id, server in nomad_clients ~}
+${server.public} ipv4_address_private=${server.private}
+%{ endfor ~}
+
+[nomad_client]
+%{ for server in nomad_clients ~}
+${server.public} ipv4_address_private=${server.private} %{ if server.floating != "" }ipv4_address_floating=${server.floating}%{ endif }
+%{ endfor ~}
