@@ -3,7 +3,7 @@
 <img src="./terraform.png">
 <br><br>
 
-![Terraform](https://github.com/ThePixelDeveloper/terraform/workflows/Terraform/badge.svg?branch=master)
+![Terraform](https://github.com/ThePixelDeveloper/terraform/workflows/Terraform/badge.svg)
 </div>
 
 ----
