@@ -1,0 +1,10 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nterraform init"
+    }
+  },
+  "identifier" : "E4530923-6099-46AC-A327-A8750B33124E",
+  "openLogOnRun" : "start"
+}

@@ -1,0 +1,10 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nterraform apply plan.out"
+    }
+  },
+  "identifier" : "1F52EE56-5537-4AB1-9365-7A759A824932",
+  "openLogOnRun" : "start"
+}
